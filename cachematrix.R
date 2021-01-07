@@ -52,7 +52,8 @@ cacheSolve <- function(x, ...) {
         inv
         }
 
-##Sample matrix to test makeCacheMatrix() and cacheSolve()
+##Generate sample matrix to test makeCacheMatrix() and cacheSolve()
+set.seed(22)
 msample <- sample(1:1000, 100)
 m1 <- matrix(msample, nrow=10, nrow=10)
 fn_list <- makeCacheMatrix(m1)
